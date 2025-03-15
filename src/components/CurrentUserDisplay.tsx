@@ -1,4 +1,4 @@
-import { useLocalUsersContext } from "../hooks/useLocalUsersContext";
+import { useLocalUsersContext } from "../contexts/NameContext/LocalUsersContext";
 
 const CurrentUserDisplay = () => {
 	const { allUsers, currentUserId } = useLocalUsersContext();

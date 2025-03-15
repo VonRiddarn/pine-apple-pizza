@@ -1,14 +1,14 @@
 import "./App.scss";
-import NameDisplay from "./components/NameDisplay";
-import { NameProvider } from "./contexts/NameContext/NameProvider";
+import CurrentUserDisplay from "./components/CurrentUserDisplay";
+import { LocalUserProvider } from "./contexts/NameContext/LocalUsersProvider";
 
 function App() {
 	return (
-		<NameProvider>
+		<LocalUserProvider>
 			<h1>🌲🍎🍕</h1>
 			<p>Nice!</p>
-			<NameDisplay />
-		</NameProvider>
+			<CurrentUserDisplay />
+		</LocalUserProvider>
 	);
 }
 

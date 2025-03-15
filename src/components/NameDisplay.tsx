@@ -1,4 +1,4 @@
-import { useNameContext } from "../contexts/NameContext";
+import { useNameContext } from "../hooks/useNameContext";
 
 const NameDisplay = () => {
 	const name = useNameContext();

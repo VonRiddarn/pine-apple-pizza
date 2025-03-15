@@ -1,6 +1,16 @@
 import React from "react";
 
-export const LocalUsersContext = React.createContext<string | null>(null);
+type LocalUser = {
+	id: number;
+	name: string;
+};
+
+export type LocalUsersType = {
+	allUsers: LocalUser[];
+	currentUserId: number;
+};
+
+export const LocalUsersContext = React.createContext<LocalUsersType | null>(null);
 
 export const useLocalUsersContext = () =>
 	React.useContext(LocalUsersContext) ??

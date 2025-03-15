@@ -1,9 +1,9 @@
 import { useLocalUsersContext } from "../hooks/useLocalUsersContext";
 
 const CurrentUserDisplay = () => {
-	const name = useLocalUsersContext();
+	const { allUsers, currentUserId } = useLocalUsersContext();
 
-	return <p>{name || "No user logged in!"}</p>;
+	return <p>{allUsers.find((u) => u.id === currentUserId)?.name || "No user selected!"}</p>;
 };
 
 export default CurrentUserDisplay;

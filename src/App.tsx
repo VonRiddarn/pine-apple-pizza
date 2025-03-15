@@ -1,6 +1,6 @@
 import "./App.scss";
 import CurrentUserDisplay from "./components/CurrentUserDisplay";
-import { LocalUserProvider } from "./contexts/NameContext/LocalUsersProvider";
+import { LocalUserProvider } from "./contexts/NameContext/LocalUsersContext";
 
 function App() {
 	return (

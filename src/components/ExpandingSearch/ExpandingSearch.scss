@@ -1,0 +1,41 @@
+.ExpandingSearch {
+	display: grid;
+	grid-template-columns: 1fr 32px;
+	width: 150px;
+	transition: width 0.5s ease-in-out;
+	border-radius: 8px;
+
+	* {
+		width: 100%;
+		background-color: white;
+		border: unset;
+
+		&:first-child {
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+		}
+
+		&:last-child {
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	button {
+		&:hover {
+			background-color: #ededed;
+		}
+		&:active {
+			background-color: #c0c0c0;
+		}
+	}
+}
+
+.ExpandingSearch:focus-within {
+	width: 500px;
+	outline: 1px solid blue;
+}

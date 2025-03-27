@@ -1,0 +1,18 @@
+.ExpandingPill {
+	display: inline-grid;
+	grid-template-columns: min-content 0fr;
+	transition: grid-template-columns 1s ease;
+	border: 1px solid black;
+	border-radius: 8px;
+
+	p {
+		overflow: hidden;
+		white-space: nowrap;
+		margin: 0;
+		padding: 0.25rem;
+	}
+}
+
+.ExpandingPill:hover {
+	grid-template-columns: min-content 1fr;
+}

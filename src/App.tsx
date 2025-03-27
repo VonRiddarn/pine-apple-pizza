@@ -1,4 +1,5 @@
 import "./App.scss";
+import BoxMark from "./components/BoxMark/BoxMark";
 import CurrentUserDisplay from "./components/CurrentUserDisplay";
 import ExpandingPill from "./components/ExpandingPill/ExpandingPill";
 import ExpandingSearch from "./components/ExpandingSearch/ExpandingSearch";
@@ -14,6 +15,9 @@ function App() {
 			<p>Nice!</p>
 			<CurrentUserDisplay />
 			<ListUsers />
+			<p>
+				This is some text with a <BoxMark>boxmark component</BoxMark> which is cool!
+			</p>
 		</LocalUserProvider>
 	);
 }
